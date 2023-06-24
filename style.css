@@ -1,0 +1,31 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-visual {
+  height: 400px;
+  width: 100%;
+  background-image: url(img/mv.jpg);
+  background-size: cover;/*画像を画面サイズに合わせる（見切れることもある）*/
+  background-position: bottom;/*画像の使用部分を下に合わせる*/
+
+}
+
+.heading {
+  padding: 20px;/*『heading』のテキスト周りの余白。
+  "margin"にすると『main-visual』自体の余白となる（後ろの画像に余白ができる）。*/
+}
+
+main {
+  width: 840px;/*横幅*/
+  margin: 50px auto;/*main要素の外側の余白*/
+}
+
+.item {
+  margin-bottom: 30px;/*item要素それぞれの下部の外側余白（下ボーダーラインの外側）*/
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 30px;/*item要素それぞれの下部の内側余白（下ボーダーラインの内側）*/
+}
